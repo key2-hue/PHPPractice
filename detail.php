@@ -4,7 +4,7 @@ require_once('country.php');
 require_once('data.php');
 
 $countryName = $_GET['name'];
-
+$country = Travel::detailName($travelInfo,$countryName);
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,8 @@ $countryName = $_GET['name'];
 </head>
 <body>
   <div class="detailName">
-    <?php echo $countryName; ?>
+    <img src="<?php $country->image() ?>">
+    <?php $country->name(); ?>
   </div>
 </body>
 </html>
