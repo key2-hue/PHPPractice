@@ -16,6 +16,11 @@ class Data{
   public function image() {
     echo $this->spotImage;
   }
+
+  public function goodPoint() {
+    return $this->goodPoint;
+  }
+
   public static function count() {
     return self::$count;
   }
