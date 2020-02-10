@@ -12,20 +12,23 @@
 </head>
 <body>
   <p>行った国の数<?php echo Data::count(); ?>ヶ国</p>
+  <form action="country.php" method="post">
   <div class="country">
     <?php foreach($city as $c): ?>
       <div class="oneCountry">
+        <div class="countryImage">
+          <img src="<?php echo $c->image();?>" class="spotImage">
+        </div>
         <div class="countryInfo">
           <p><?php echo $c->name(); ?></p>
           <?php for($i = 1;$i < $c->goodPoint();$i++): ?>
             <i class="far fa-thumbs-up"></i>
           <?php endfor ?>
         </div>
-        <div class="countryImage">
-          <img src="<?php echo $c->image();?>" class="spotImage">
-        </div>
       </div>
     <?php endforeach ?>
+    <input type="submit" value="送信する">
   </div>
+  </form>
 </body>
 </html>

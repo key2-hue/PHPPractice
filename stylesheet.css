@@ -21,3 +21,7 @@
 .oneCountry:nth-child(even) {
   margin-left: 50px;
 }
+
+.countryInfo {
+  margin-bottom: 30px;
+}
