@@ -6,7 +6,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Order site</title>
+  <title>Country site</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
@@ -24,11 +24,12 @@
           <?php for($i = 1;$i < $c->goodPoint();$i++): ?>
             <i class="far fa-thumbs-up"></i>
           <?php endfor ?>
+          <input type="text" name="count">
         </div>
       </div>
     <?php endforeach ?>
-    <input type="submit" value="送信する">
   </div>
+  <input type="submit" value="送信する">
   </form>
 </body>
 </html>
