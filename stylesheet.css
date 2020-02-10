@@ -1,6 +1,8 @@
 .country {
   display: flex;
   flex-wrap: wrap;
+  justify-content:space-around;
+  width:calc(100vw - 40px);
 }
 
 .spotImage {
@@ -12,16 +14,30 @@
 .oneCountry {
   display: flex;
   flex-direction: column;
+  
 }
 
-.oneCountry:nth-child(odd) {
-  margin-left: 40px;
-}
-
-.oneCountry:nth-child(even) {
-  margin-left: 50px;
-}
 
 .countryReview {
   margin-bottom: 30px;
+}
+
+.countrySubmit {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: limegreen;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  user-select:none;
+}
+
+.countrySubmit:hover {
+  cursor:pointer;
+  opacity: 0.8;
+}
+
+.countrySubmit:focus {
+  outline:0;
 }

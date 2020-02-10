@@ -12,6 +12,7 @@
 </head>
 <body>
   <p>行った国の数<?php echo Data::count(); ?>ヶ国</p>
+  <p> <i class="far fa-thumbs-up"></i>が多いほど他の方の満足度は高いです。<p>
   <form action="country.php" method="post">
   <div class="country">
     <?php foreach($city as $c): ?>
@@ -26,12 +27,12 @@
           <?php endfor ?>
         </div>
         <div class="countryReview">
-          <input type="text" value="0" name="<?php echo $c->name() ?>">
+          <input type="text"  value="0" name="<?php echo $c->name() ?>">
         </div>
       </div>
     <?php endforeach ?>
   </div>
-  <input type="submit" value="送信する">
+  <input type="submit" class="countrySubmit" value="送信する">
   </form>
 </body>
 </html>
