@@ -13,7 +13,9 @@
     <?php foreach($city as $c): ?>
       <?php 
         $c->name();
-        echo $_POST['count'];
+        $yourCount = $_POST[$c->getName()];
+        $c->setYourCount($yourCount);
+        echo $yourCount;
       ?>
 
     <?php endforeach ?>

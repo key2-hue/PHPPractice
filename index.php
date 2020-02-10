@@ -24,7 +24,9 @@
           <?php for($i = 1;$i < $c->goodPoint();$i++): ?>
             <i class="far fa-thumbs-up"></i>
           <?php endfor ?>
-          <input type="text" name="count">
+        </div>
+        <div class="countryReview">
+          <input type="text" value="0" name="<?php echo $c->name() ?>">
         </div>
       </div>
     <?php endforeach ?>

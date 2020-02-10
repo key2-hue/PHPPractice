@@ -3,6 +3,7 @@ class Data{
   protected $name;
   protected $spotImage;
   protected $goodPoint;
+  protected $yourCount;
   protected static $count = 0;
   public function __construct($name,$spotImage,$goodPoint) {
     $this->name = $name;
@@ -13,6 +14,11 @@ class Data{
   public function name() {
     echo $this->name;
   }
+
+  public function getName() {
+    return $this->name;
+  }
+
   public function image() {
     echo $this->spotImage;
   }
@@ -23,6 +29,10 @@ class Data{
 
   public static function count() {
     return self::$count;
+  }
+
+  public function setYourCount($yourCount) {
+    $this->yourCount = $yourCount;
   }
 }
 
