@@ -1,5 +1,6 @@
 <?php
 
+  require_once("city.php");
   require_once("data.php");
 ?>
 <!DOCTYPE html>
@@ -11,9 +12,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
-  <p>行った国の数<?php echo Data::count(); ?>ヶ国</p>
+  <p>行った国の数<?php echo City::count(); ?>ヶ国</p>
   <p> <i class="far fa-thumbs-up"></i>が多いほど他の方の満足度は高いです。<p>
-  <form action="country.php" method="post">
+  <form action="result.php" method="post">
   <div class="country">
     <?php foreach($city as $c): ?>
       <div class="oneCountry">

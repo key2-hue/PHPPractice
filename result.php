@@ -1,4 +1,7 @@
-<?php require_once('data.php') ?>
+<?php 
+require_once('city.php');
+require_once('data.php');
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -21,9 +24,13 @@
             $c->setYourCount($yourCount);
             echo $yourCount;
           ?>
+          <?php for($i = 1;$i <= $yourCount;$i++): ?>
+            <i class="far fa-thumbs-up"></i>
+          <?php endfor ?>
         </p>
       <?php endforeach ?>
     </div>
   </div>
-</body>
+  <a href="index.php" class="back">前画面に戻る</a>
+ </body>
 </html>

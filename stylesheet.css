@@ -58,3 +58,11 @@
 .countryName {
   text-align: center;
 }
+
+.back {
+  display: block;
+  text-decoration: none;
+  margin-top: 40px;
+  text-align: center;
+  color: blue;
+}
