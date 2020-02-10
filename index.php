@@ -14,16 +14,19 @@
 </head>
 <body>
   <p>行った都市の数<?php echo City::count(); ?>ヶ所</p>
+  <p>行った国の数<?php echo Country::count(); ?>ヶ国</p>
   <p> <i class="far fa-thumbs-up">もしくは<i class="fas fa-globe-asia"></i></i>が多いほど他の方の満足度は高いです。<p>
   <form action="result.php" method="post">
   <div class="country">
-    <?php foreach($travalInfo as $c): ?>
+    <?php foreach($travelInfo as $c): ?>
       <div class="oneCountry">
         <div class="countryImage">
           <img src="<?php echo $c->image();?>" class="spotImage">
         </div>
         <div class="countryInfo">
-          <p><?php echo $c->name(); ?></p>
+          <a href="detail.php?name=<?php echo $c->name() ?>">
+            <p><?php echo $c->name(); ?></p>
+          </a>
           <?php for($i = 1;$i < $c->goodPoint();$i++): ?>
             <?php if($c instanceof City): ?>
               <i class="far fa-thumbs-up"></i>

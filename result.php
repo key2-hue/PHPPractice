@@ -1,6 +1,7 @@
 <?php 
 require_once('city.php');
 require_once('data.php');
+require_once('country.php');
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -14,7 +15,7 @@ require_once('data.php');
   <div class="countryPoint">
     <h2 class="countryE">各国の評価</h2>
     <div class="countryAll">
-      <?php foreach($city as $c): ?>
+      <?php foreach($travelInfo as $c): ?>
         <p class="countryName">
           <?php 
           $c->name();

@@ -11,4 +11,4 @@ $London = new City("London","https://www.arukikata.co.jp/com_img/city/large/p_LO
 $Finland = new Country("Finland","https://www.jtb.co.jp/kaigai/area/finland/images/fb.jpg",5);
 $Canada = new Country("Canada","https://www.lieugaksquare.com/ca/img/caofficial.jpg",3); 
 $Australia = new Country("Australia","https://x.hankyu-travel.com/cms_photo_image/image_search_kikan5.php?p_photo_mno=00376-webbn-18418.jpg",4);
-$travalInfo = array($Hawaii,$Paris,$Auckland,$London,$Finland,$Canada,$Australia);
+$travelInfo = array($Hawaii,$Paris,$Auckland,$London,$Finland,$Canada,$Australia);
