@@ -14,11 +14,17 @@
   <p>行った国の数<?php echo Data::count(); ?>ヶ国</p>
   <div class="country">
     <?php foreach($city as $c): ?>
-      <p><?php echo $c->name(); ?></p>
-      <?php for($i = 1;$i < $c->goodPoint();$i++): ?>
-        <i class="far fa-thumbs-up"></i>
-      <?php endfor ?>
-      <img src="<?php echo $c->image();?>" class="spotImage">
+      <div class="oneCountry">
+        <div class="countryInfo">
+          <p><?php echo $c->name(); ?></p>
+          <?php for($i = 1;$i < $c->goodPoint();$i++): ?>
+            <i class="far fa-thumbs-up"></i>
+          <?php endfor ?>
+        </div>
+        <div class="countryImage">
+          <img src="<?php echo $c->image();?>" class="spotImage">
+        </div>
+      </div>
     <?php endforeach ?>
   </div>
 </body>

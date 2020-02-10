@@ -8,3 +8,16 @@
   width: 300px;
   height: 300px;
 }
+
+.oneCountry {
+  display: flex;
+  flex-direction: column;
+}
+
+.oneCountry:nth-child(odd) {
+  margin-left: 40px;
+}
+
+.oneCountry:nth-child(even) {
+  margin-left: 50px;
+}
