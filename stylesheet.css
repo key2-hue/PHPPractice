@@ -1,3 +1,4 @@
+/* index.php */
 .country {
   display: flex;
   flex-wrap: wrap;
@@ -40,4 +41,20 @@
 
 .countrySubmit:focus {
   outline:0;
+}
+
+/* country.php */
+
+.countryE {
+  text-align:center;
+}
+
+.countryAll {
+  margin: 0 auto;
+  border:1px solid gray;
+  width:calc(100vw - 400px);
+}
+
+.countryName {
+  text-align: center;
 }

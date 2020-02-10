@@ -9,16 +9,21 @@
 </head>
 <body>
   <div class="countryPoint">
-    <h2>各国の評価</h2>
-    <?php foreach($city as $c): ?>
-      <?php 
-        $c->name();
-        $yourCount = $_POST[$c->getName()];
-        $c->setYourCount($yourCount);
-        echo $yourCount;
-      ?>
-
-    <?php endforeach ?>
+    <h2 class="countryE">各国の評価</h2>
+    <div class="countryAll">
+      <?php foreach($city as $c): ?>
+        <p class="countryName">
+          <?php 
+          $c->name();
+          ?>
+          <?php 
+            $yourCount = $_POST[$c->getName()];
+            $c->setYourCount($yourCount);
+            echo $yourCount;
+          ?>
+        </p>
+      <?php endforeach ?>
+    </div>
   </div>
 </body>
 </html>
